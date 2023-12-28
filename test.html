@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech in JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <div class="outside-box"><h1>Text to speech converter</h1></div>
+    <div class="container">
+        <label for="text"><b>Text to speech:</b></label>
+        <textarea id="text" placeholder="Enter your text here..."></textarea>
+        <select id="languageSelect">
+            <option value="en-US">English (US)</option>
+            <option value="es-ES">Spanish (Spain)</option>
+            <option value="ja-JP">Japanese</option>
+            <option value="ko-KR">Korean</option>
+            <option value="fr-FR">French</option>
+        </select>
+        <div class="box">
+        <br>
+        <input type="range" id="pitchSlider" min="0.5" max="2" step="0.1" value="1">
+        <label for="pitchSlider">Pitch</label>
+        <br>
+        <input type="range" id="speedSlider" min="0.5" max="2" step="0.1" value="0.95">
+        <label for="speedSlider">Speed</label>
+        <br>
+        </div>
+        <button id="speak" type="submit">Speak Text</button>
+
+    </div>
+</body>
+</html>
